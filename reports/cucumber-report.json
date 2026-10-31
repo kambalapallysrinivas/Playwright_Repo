@@ -1,0 +1,137 @@
+[
+  {
+    "description": "  As an admin,\n  I want to create new employees and user accounts,\n  So that I can manage employee and user access to the application.",
+    "elements": [
+      {
+        "description": "",
+        "id": "admin-login;verify-admin-login-and-logout-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify admin login and logout with valid credentials",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1551880200
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2479191300
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open the browser and navigate to the admin login URL \"https://qfundxqa1.qfund.net/cc/adminIndex.do\"",
+            "match": {
+              "location": "step_definitions\\adminlogin_steps.ts:6"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 77765599
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the admin login page",
+            "match": {
+              "location": "step_definitions\\adminlogin_steps.ts:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 52453499
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I enter the username \"qfundadfs\"",
+            "match": {
+              "location": "step_definitions\\adminlogin_steps.ts:17"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 30322000
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I enter the password \"1234\"",
+            "match": {
+              "location": "step_definitions\\adminlogin_steps.ts:21"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 754671399
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click the Submit button",
+            "match": {
+              "location": "step_definitions\\adminlogin_steps.ts:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3286100
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the admin dashboard",
+            "match": {
+              "location": "step_definitions\\adminlogin_steps.ts:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1465200
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click the Logout button",
+            "match": {
+              "location": "step_definitions\\adminlogin_steps.ts:34"
+            }
+          },
+          {
+            "result": {
+              "status": "failed",
+              "duration": 21813600,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"Login Page\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\n    at captureRawStack (C:\\Users\\AYAANSH\\Desktop\\Cucumber_Playwright\\node_modules\\playwright-core\\lib\\coreBundle.js:9282:17)\n    at callMatcherAsStep (C:\\Users\\AYAANSH\\Desktop\\Cucumber_Playwright\\node_modules\\playwright\\lib\\matchers\\expect.js:13316:57)\n    at Object.toEqual (C:\\Users\\AYAANSH\\Desktop\\Cucumber_Playwright\\node_modules\\playwright\\lib\\matchers\\expect.js:13308:23)\n    at TestContext.<anonymous> (C:\\Users\\AYAANSH\\Desktop\\Cucumber_Playwright\\step_definitions\\adminlogin_steps.ts:13:21)"
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see the admin login page",
+            "match": {
+              "location": "step_definitions\\adminlogin_steps.ts:10"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "admin-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Admin Login",
+    "tags": [],
+    "uri": "features\\loginpage.feature"
+  }
+]
