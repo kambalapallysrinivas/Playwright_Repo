@@ -7,7 +7,7 @@ Feature: Admin Login
     Given I open the browser and navigate to the admin login URL "https://qfundxqa1.qfund.net/cc/adminIndex.do"
     Then I should see the admin login page
     When I enter the username "qfundadfs"
-    And I enter the password "1234"
+    And I enter the password "456789"
     And I click the Submit button
     Then I should see the admin dashboard
     When I click the Logout button
