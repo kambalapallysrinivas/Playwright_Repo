@@ -8,7 +8,7 @@ Feature: Admin Login
     Then I should see the admin login page
     When I enter the username "qfundadfs"
     And I enter the password "1234"
-    And I click the Submit buttons
+    And I click the Submit button
     Then I should see the admin dashboard
     When I click the Logout button
     Then I should see the admin login page
