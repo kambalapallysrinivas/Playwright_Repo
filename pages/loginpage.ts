@@ -13,7 +13,7 @@ constructor(page:Page){
     this.password=this.page.locator("//input[@name='loginRequestBean.password']")
     this.loginButton=this.page.locator("//input[@name='login']")
     this.storeSetup=this.page.frameLocator("#topFrame").getByRole('link',{name:'Store Setup',exact:true})
-     this.logOut=this.page.frameLocator("#topFrame").getByRole('link',{name:'Logout',exact:true})
+     this.logOut=this.page.frameLocator("#topFrame").locator("//a[@data-original-title='Logout']")
 
 }
 async enterUserName(user:string):Promise<void>{

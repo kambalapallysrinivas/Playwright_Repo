@@ -31,7 +31,7 @@ Then('I should see the admin dashboard', async function (this:TestContext) {
  
 });
 
-When('I click the Logout button', function (this:TestContext) {
-  this.loginpage.clickOnLoginOut()
-  this.page.waitForTimeout(5000)
+When('I click the Logout button',async function (this:TestContext) {
+  await this.loginpage.clickOnLoginOut()
+  //await this.page.waitForTimeout(5000)
 });
